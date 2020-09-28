@@ -106,15 +106,25 @@ function myFunction() {
 <form action="https://formspree.io/mqkgaqjz"
       method="POST">
     <label>
+        Your First Name:
+        <input type="text" name="fname" />
+    </label>
+    <label>
+        Your Last Name:
+        <input type="text" name="lname" />
+    </label>
+    <label>
         Your email:
-        <input type="text" name="_replyto">
+        <input type="text" name="email">
+    </label>
+    <label>
+        Subject:
+        <input type="text" name="sub" />
     </label>
     <label>
         Your message:
         <textarea name="message"></textarea>
     </label>
-
-    <!-- your other form fields go here -->
 
     <button type="submit">Send</button>
 </form>
