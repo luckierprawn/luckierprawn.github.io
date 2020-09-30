@@ -9,6 +9,7 @@
 </head>
 <body style="background-color:black; color:white">
     <h1 style="font-size:40px;text-decoration:underline;font-weight:bold;text-align:center">Homepage</h1>
+    <p style="font-size:18px" class="w3-display-topleft" id="date"></p>
     <div class="w3-bar w3-dark-grey">
         <a href="../index.html" class="w3-bar-item w3-button w3-grey"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
@@ -92,19 +93,8 @@
             </div>
         </div>
     </div>
-    <p id="test"></p>
-    <script>
-        function date() {
-            var today = new Date();
-            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            document.getElementById("smeg").innerHTML = days[d.getDay()];
-            //document.getElementById("demo").innerHTML = d.getDate();
-            today = days;
-            document.getElementById("smeg").innerHTML = today;
-            var text = new Date("30/09/2020");
-            document.getElementById("test").innerHTML = text;
-        }
 
+    <script>
         function myFunction() {
             var x = document.getElementById("demo");
             if (x.className.indexOf("w3-show") == -1) {
@@ -114,7 +104,15 @@
             }
         }
 
-
+        window.onload = function date() {
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var yyyy = today.getFullYear();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            today = days[today.getDay()] + ' ' + dd + ' ' + month[today.getMonth()] + ' ' + yyyy;
+            document.getElementById("date").innerHTML = today;
+        }
     </script>
     <br clear="all" />
     <br clear="all" />
