@@ -92,7 +92,19 @@
             </div>
         </div>
     </div>
+    <p id="test"></p>
     <script>
+        function date() {
+            var today = new Date();
+            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            document.getElementById("smeg").innerHTML = days[d.getDay()];
+            //document.getElementById("demo").innerHTML = d.getDate();
+            today = days;
+            document.getElementById("smeg").innerHTML = today;
+            var text = new Date("30/09/2020");
+            document.getElementById("test").innerHTML = text;
+        }
+
         function myFunction() {
             var x = document.getElementById("demo");
             if (x.className.indexOf("w3-show") == -1) {
@@ -101,6 +113,8 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
+
+
     </script>
     <br clear="all" />
     <br clear="all" />
