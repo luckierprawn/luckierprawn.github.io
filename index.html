@@ -1,120 +1,49 @@
-﻿<!DOCTYPE HTML>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="icon.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Homepage</title>
-</head>
-<body style="background-color:black; color:white">
-    <h1 style="font-size:40px;text-decoration:underline;font-weight:bold;text-align:center">Homepage</h1>
-    <p style="font-size:18px" class="w3-display-topleft w3-hide-small" id="date"></p>
-    <div class="w3-bar w3-dark-grey">
-        <a href="../index.html" class="w3-bar-item w3-button w3-grey"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
-        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-        <a href="../contact.html" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope fa-fw"></i>&nbsp;Contact Me</a>
-        <a href="../contact.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium"><i class="fa fa-envelope fa-fw"></i>&nbsp;Contact Me</a>
-        <div class="w3-dropdown-hover">
-            <button class="w3-button w3-hide-small"><i class="fa fa-television fa-fw"></i>&nbsp;TV Shows</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <h5 style="text-decoration:underline;text-align:center">Anime</h5>
-                <a href="../Bleach/bleach.html" class="w3-bar-item w3-button">Bleach</a>
-                <a href="../Death Note/death note.html" class="w3-bar-item w3-button">Death Note</a>
-                <a href="../Tokyo Ghoul/tokyo ghoul.html" class="w3-bar-item w3-button">Tokyo Ghoul</a>
-                <h5 style="text-decoration:underline;text-align:center">Star Trek</h5>
-                <a href="../Star Trek TOS/star trek tos.html" class="w3-bar-item w3-button">Star Trek: The Original Series</a>
-                <a href="../Star Trek TNG/star trek tng.html" class="w3-bar-item w3-button">Star Trek: The Next Generation</a>
-                <a href="../Star Trek DS9/star trek ds9.html" class="w3-bar-item w3-button">Star Trek: Deep Space Nine</a>
-                <a href="../Star Trek Voyager/star trek voyager.html" class="w3-bar-item w3-button">Star Trek: Voyager</a>
-                <a href="../Star Trek Enterprise/star trek ent.html" class="w3-bar-item w3-button">Star Trek: Enterprise</a>
-                <h5 style="text-decoration:underline;text-align:center">Other Shows</h5>
-                <a href="../American Dad/american dad.html" class="w3-bar-item w3-button">American Dad</a>
-                <a href="../Family Guy/family guy.html" class="w3-bar-item w3-button">Family Guy</a>
-                <a href="../Futurama/futurama.html" class="w3-bar-item w3-button">Futurama</a>
-                <a href="../Doctor Who/doctor who.html" class="w3-bar-item w3-button">Doctor Who</a>
-            </div>
-        </div>
-        <div class="w3-dropdown-hover">
-            <button class="w3-button w3-hide-small"><i class="fa fa-gamepad fa-fw"></i>&nbsp;Games</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <h5 style="text-decoration:underline;text-align:center">Oddworld Games</h5>
-                <a href="../Abe's Oddysee/abes oddysee.html" class="w3-bar-item w3-button">Oddworld: Abe's Oddysee</a>
-                <a href="../Abe's Exoddus/abes exoddus.html" class="w3-bar-item w3-button">Oddworld: Abe's Exoddus</a>
-                <a href="../Munch's Oddysee/munch's oddysee.html" class="w3-bar-item w3-button">Oddworld: Munch's Oddysee</a>
-                <a href="../Stranger's Wrath/stranger's wrath.html" class="w3-bar-item w3-button">Oddworld: Stranger's Wrath</a>
-                <a href="../New N Tasty/new n tasty.html" class="w3-bar-item w3-button">Oddworld: New 'n' Tasty</a>
-                <h5 style="text-decoration:underline;text-align:center">Metroid Prime Games</h5>
-                <a href="../Metroid/metroid.html" class="w3-bar-item w3-button">Metroid Prime</a>
-                <a href="../Metroid 2/metroid 2.html" class="w3-bar-item w3-button">Metroid Prime 2: Echoes</a>
-                <a href="../Metroid 3/metroid 3.html" class="w3-bar-item w3-button">Metroid Prime 3: Corruption</a>
-                <h5 style="text-decoration:underline;text-align:center">Other Games</h5>
-                <a href="../Doom BFG/Doom bfg.html" class="w3-bar-item w3-button">Doom 3 BFG Edition</a>
-            </div>
-        </div>
-    </div>
-    <div id="demo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
-        <b></b>
-        <div class="w3-dropdown-hover">
-            <button class="w3-bar-item w3-button"><i class="fa fa-television fa-fw"></i>&nbsp;TV Shows</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <h5 style="text-decoration:underline;text-align:center">Anime</h5>
-                <a href="../Bleach/bleach.html" class="w3-bar-item w3-button">Bleach</a>
-                <a href="../Death Note/death note.html" class="w3-bar-item w3-button">Death Note</a>
-                <a href="../Tokyo Ghoul/tokyo ghoul.html" class="w3-bar-item w3-button">Tokyo Ghoul</a>
-                <h5 style="text-decoration:underline;text-align:center">Star Trek</h5>
-                <a href="../Star Trek TOS/star trek tos.html" class="w3-bar-item w3-button">Star Trek: The Original Series</a>
-                <a href="../Star Trek TNG/star trek tng.html" class="w3-bar-item w3-button">Star Trek: The Next Generation</a>
-                <a href="../Star Trek DS9/star trek ds9.html" class="w3-bar-item w3-button">Star Trek: Deep Space Nine</a>
-                <a href="../Star Trek Voyager/star trek voyager.html" class="w3-bar-item w3-button">Star Trek: Voyager</a>
-                <a href="../Star Trek Enterprise/star trek ent.html" class="w3-bar-item w3-button">Star Trek: Enterprise</a>
-                <h5 style="text-decoration:underline;text-align:center">Other Shows</h5>
-                <a href="../American Dad/american dad.html" class="w3-bar-item w3-button">American Dad</a>
-                <a href="../Family Guy/family guy.html" class="w3-bar-item w3-button">Family Guy</a>
-                <a href="../Futurama/futurama.html" class="w3-bar-item w3-button">Futurama</a>
-                <a href="../Doctor Who/doctor who.html" class="w3-bar-item w3-button">Doctor Who</a>
-            </div>
-        </div>
-        <div class="w3-dropdown-hover">
-            <button class="w3-bar-item w3-button"><i class="fa fa-gamepad fa-fw"></i>&nbsp;Games</button>
-            <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                <h5 style="text-decoration:underline;text-align:center">Oddworld Games</h5>
-                <a href="../Abe's Oddysee/abes oddysee.html" class="w3-bar-item w3-button">Oddworld: Abe's Oddysee</a>
-                <a href="../Abe's Exoddus/abes exoddus.html" class="w3-bar-item w3-button">Oddworld: Abe's Exoddus</a>
-                <a href="../Munch's Oddysee/munch's oddysee.html" class="w3-bar-item w3-button">Oddworld Munch's Oddysee</a>
-                <a href="../Stranger's Wrath/stranger's wrath.html" class="w3-bar-item w3-button">Oddworld: Stranger's Wrath</a>
-                <a href="../New N Tasty/new n tasty.html" class="w3-bar-item w3-button">Oddworld New 'n' Tasty</a>
-                <h5 style="text-decoration:underline;text-align:center">Metroid Prime Games</h5>
-                <a href="../Metroid/metroid.html" class="w3-bar-item w3-button">Metroid Prime</a>
-                <a href="../Metroid 2/metroid 2.html" class="w3-bar-item w3-button">Metroid Prime 2: Echoes</a>
-                <a href="../Metroid 3/metroid 3.html" class="w3-bar-item w3-button">Metroid Prime 3: Corruption</a>
-                <h5 style="text-decoration:underline;text-align:center">Other Games</h5>
-                <a href="../Doom BFG/Doom bfg.html" class="w3-bar-item w3-button">Doom 3 BFG Edition</a>
-            </div>
-        </div>
-    </div>
+﻿<!DOCTYPE html>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("demo");
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Yogscast Stream</title>
+    <link rel="icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div id="twitch-embed"></div>
+
+    <div class="w3-container">
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-grey w3-hover-blue w3-round" style="font-weight:bold;font-size:small">Click here to see the schedule</button>
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card w3-animate-zoom">
+                <header class="w3-container w3-black" style="background-color:black">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-round w3-display-topright" id="close">&times;</span>
+                    <h2 style="text-align:center;text-decoration:underline;font-weight:bold;color:whitesmoke">Yogscast Stream Schedule</h2>
+                </header>
+                <div class="w3-container" style="background-color:black">
+                    <img src="https://schedule.yogscast.com" alt="Yogscast Stream Schedule" style="height:100%; width:100%" />
+                    <a href="https://www.twitch.tv/yogscast"><p style="font-size:16px;text-decoration:underline;color:Highlight">Watch on Twitch</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            channel: "yogscast",
+            width: "100%",
+            height: "890px"
+        });</script>
+
+        <script>
+            var modal = document.getElementById('id01');
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
             }
         }
-
-        window.onload = function date() {
-            var today = new Date();
-            var dd = String(today.getDate()).padStart(2, '0');
-            var yyyy = today.getFullYear();
-            var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-            var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-            today = days[today.getDay()] + ' ' + dd + ' ' + month[today.getMonth()] + ' ' + yyyy;
-            document.getElementById("date").innerHTML = today;
-        }
     </script>
-    <br clear="all" />
-    <br clear="all" />
+
 </body>
 </html>
