@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="../icon.png" />
+    <link rel="stylesheet" href="../styles.css" />
+    <title>Doctor Who</title>
+</head>
+<body>
+<h1 style="font-size:40px;text-decoration:underline;font-weight:bold;text-align:center">Doctor Who</h1>
+<p style="font-size:18px" class="w3-display-topleft w3-hide-small" id="date"></p>
+<div class="w3-bar w3-dark-grey">
+  <a href="../index.html" class="w3-bar-item w3-button"><i class="fa fa-home fa-fw"></i>&nbsp;Home</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+  <a href="../contact.html" class="w3-bar-item w3-button w3-hide-small w3-right"><i class="fa fa-envelope fa-fw"></i>&nbsp;Contact Me</a>
+  <a href="../contact.html" class="w3-bar-item w3-button w3-hide-large w3-hide-medium"><i class="fa fa-envelope fa-fw"></i>&nbsp;Contact Me</a>
+<div class="w3-dropdown-hover">
+    <button class="w3-button w3-hide-small w3-grey"><i class="fa fa-television fa-fw"></i>&nbsp;TV Shows</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <h5 style="text-decoration:underline;text-align:center">Anime</h5>
+        <a href="../Bleach/bleach.html" class="w3-bar-item w3-button">Bleach</a>
+        <a href="../Death Note/death note.html" class="w3-bar-item w3-button">Death Note</a>
+        <a href="../Tokyo Ghoul/tokyo ghoul.html" class="w3-bar-item w3-button">Tokyo Ghoul</a>
+        <h5 style="text-decoration:underline;text-align:center">Star Trek</h5>
+        <a href="../Star Trek TOS/star trek tos.html" class="w3-bar-item w3-button">Star Trek: The Original Series</a>
+        <a href="../Star Trek TNG/star trek tng.html" class="w3-bar-item w3-button">Star Trek: The Next Generation</a>
+        <a href="../Star Trek DS9/star trek ds9.html" class="w3-bar-item w3-button">Star Trek: Deep Space Nine</a>
+        <a href="../Star Trek Voyager/star trek voyager.html" class="w3-bar-item w3-button">Star Trek: Voyager</a>
+        <a href="../Star Trek Enterprise/star trek ent.html" class="w3-bar-item w3-button">Star Trek: Enterprise</a>
+        <h5 style="text-decoration:underline;text-align:center">Other Shows</h5>
+        <a href="../American Dad/american dad.html" class="w3-bar-item w3-button">American Dad</a>
+        <a href="../Family Guy/family guy.html" class="w3-bar-item w3-button">Family Guy</a>
+        <a href="../Futurama/futurama.html" class="w3-bar-item w3-button">Futurama</a>
+        <a href="../Doctor Who/doctor who.html" class="w3-bar-item w3-button w3-grey">Doctor Who</a>
+    </div>
+</div>
+<div class="w3-dropdown-hover">
+    <button class="w3-button w3-hide-small"><i class="fa fa-gamepad fa-fw"></i>&nbsp;Games</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <h5 style="text-decoration:underline;text-align:center">Oddworld Games</h5>
+        <a href="../Abe's Oddysee/abes oddysee.html" class="w3-bar-item w3-button">Oddworld: Abe's Oddysee</a>
+        <a href="../Abe's Exoddus/abes exoddus.html" class="w3-bar-item w3-button">Oddworld: Abe's Exoddus</a>
+        <a href="../Munch's Oddysee/munch's oddysee.html" class="w3-bar-item w3-button">Oddworld: Munch's Oddysee</a>
+        <a href="../Stranger's Wrath/stranger's wrath.html" class="w3-bar-item w3-button">Oddworld: Stranger's Wrath</a>
+        <a href="../New N Tasty/new n tasty.html" class="w3-bar-item w3-button">Oddworld: New 'n' Tasty</a>
+        <h5 style="text-decoration:underline;text-align:center">Metroid Prime Games</h5>
+        <a href="../Metroid/metroid.html" class="w3-bar-item w3-button">Metroid Prime</a>
+        <a href="../Metroid 2/metroid 2.html" class="w3-bar-item w3-button">Metroid Prime 2: Echoes</a>
+        <a href="../Metroid 3/metroid 3.html" class="w3-bar-item w3-button">Metroid Prime 3: Corruption</a>
+        <h5 style="text-decoration:underline;text-align:center">Other Games</h5>
+        <a href="../Doom BFG/Doom bfg.html" class="w3-bar-item w3-button">Doom 3 BFG Edition</a>
+    </div>
+</div>
+</div>
+<div id="demo" class="w3-bar-block w3-dark-grey w3-hide w3-hide-large w3-hide-medium">
+    <b></b>
+  <div class="w3-dropdown-hover">
+    <button class="w3-bar-item w3-button w3-grey"><i class="fa fa-television fa-fw"></i>&nbsp;TV Shows</button>
+    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <h5 style="text-decoration:underline;text-align:center">Anime</h5>
+        <a href="../Bleach/bleach.html" class="w3-bar-item w3-button">Bleach</a>
+        <a href="../Death Note/death note.html" class="w3-bar-item w3-button">Death Note</a>
+        <a href="../Tokyo Ghoul/tokyo ghoul.html" class="w3-bar-item w3-button">Tokyo Ghoul</a>
+        <h5 style="text-decoration:underline;text-align:center">Star Trek</h5>
+        <a href="../Star Trek TOS/star trek tos.html" class="w3-bar-item w3-button">Star Trek: The Original Series</a>
+        <a href="../Star Trek TNG/star trek tng.html" class="w3-bar-item w3-button">Star Trek: The Next Generation</a>
+        <a href="../Star Trek DS9/star trek ds9.html" class="w3-bar-item w3-button">Star Trek: Deep Space Nine</a>
+        <a href="../Star Trek Voyager/star trek voyager.html" class="w3-bar-item w3-button">Star Trek: Voyager</a>
+        <a href="../Star Trek Enterprise/star trek ent.html" class="w3-bar-item w3-button">Star Trek: Enterprise</a>
+        <h5 style="text-decoration:underline;text-align:center">Other Shows</h5>
+        <a href="../American Dad/american dad.html" class="w3-bar-item w3-button">American Dad</a>
+        <a href="../Family Guy/family guy.html" class="w3-bar-item w3-button">Family Guy</a>
+        <a href="../Futurama/futurama.html" class="w3-bar-item w3-button">Futurama</a>
+        <a href="../Doctor Who/doctor who.html" class="w3-bar-item w3-button w3-grey">Doctor Who</a>    
+    </div>
+  </div>
+  <div class="w3-dropdown-hover">
+        <button class="w3-bar-item w3-button"><i class="fa fa-gamepad fa-fw"></i>&nbsp;Games</button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <h5 style="text-decoration:underline;text-align:center">Oddworld Games</h5>
+            <a href="../Abe's Oddysee/abes oddysee.html" class="w3-bar-item w3-button">Oddworld: Abe's Oddysee</a>
+            <a href="../Abe's Exoddus/abes exoddus.html" class="w3-bar-item w3-button">Oddworld: Abe's Exoddus</a>
+            <a href="../Munch's Oddysee/munch's oddysee.html" class="w3-bar-item w3-button">Oddworld Munch's Oddysee</a>
+            <a href="../Stranger's Wrath/stranger's wrath.html" class="w3-bar-item w3-button">Oddworld: Stranger's Wrath</a>
+            <a href="../New N Tasty/new n tasty.html" class="w3-bar-item w3-button">Oddworld New 'n' Tasty</a>
+            <h5 style="text-decoration:underline;text-align:center">Metroid Prime Games</h5>
+            <a href="../Metroid/metroid.html" class="w3-bar-item w3-button">Metroid Prime</a>
+            <a href="../Metroid 2/metroid 2.html" class="w3-bar-item w3-button">Metroid Prime 2: Echoes</a>
+            <a href="../Metroid 3/metroid 3.html" class="w3-bar-item w3-button">Metroid Prime 3: Corruption</a>
+            <h5 style="text-decoration:underline;text-align:center">Other Games</h5>
+            <a href="../Doom BFG/Doom bfg.html" class="w3-bar-item w3-button">Doom 3 BFG Edition</a>
+        </div>
+    </div>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("demo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+    }
+    window.onload = function date() {
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var yyyy = today.getFullYear();
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        today = days[today.getDay()] + ' ' + dd + ' ' + month[today.getMonth()] + ' ' + yyyy;
+        document.getElementById("date").innerHTML = today;
+    }
+</script>
+<br clear="all" />
+<div class="w3-container">
+    <div class="w3-card-4" style="width:100%;max-width:800px">
+        <img src="doctor who.png" alt="Doctor Who All Doctors" title="Doctor Who All Doctors" style="width:90%" />
+    </div>
+</div>
+<div class="w3-container">
+    <p>Doctor Who is a British science-fiction television programme produced by the BBC since 1963. The programme depicts the adventures of a Time Lord called "the Doctor", an extraterrestrial being from the planet Gallifrey. 
+       The Doctor explores the universe in a time-travelling space ship called the TARDIS. Its exterior appears as a blue British police box, 
+       which was a common sight in Britain in 1963 when the series first aired. Accompanied by a number of companions, the Doctor combats a variety of foes, while working to save civilisations and help people in need. 
+       The show is a significant part of British popular culture, and elsewhere it has gained a cult following. It has influenced generations of British television professionals, many of whom grew up watching the series. 
+       The programme originally ran from 1963 to 1989. There was an unsuccessful attempt to revive regular production in 1996 with a backdoor pilot, in the form of a television film titled Doctor Who. 
+       The programme was relaunched in 2005, and since then has been produced in-house by BBC Wales in Cardiff. Doctor Who has also spawned numerous spin-offs, including comic books, films, novels, 
+       audio dramas, and the television series Torchwood (2006–2011), The Sarah Jane Adventures (2007–2011), K-9 (2009–2010), and Class (2016–present), and has been the subject of many parodies and references in popular culture.</p>
+    <p>Twelve actors have headlined the series as the Doctor. The transition from one actor to another is written into the plot of the show with the concept of regeneration into a new incarnation – 
+       an idea introduced in 1966 to allow the show to continue after the departure of original lead William Hartnell who was becoming very ill at the time. 
+       The concept is that this is a Time Lord trait through which the character of the Doctor takes on a new body and personality to recover from a severe injury or anything that would otherwise kill a normal person. 
+       Each actor's portrayal differs, but all represent stages in the life of the same character and form a single narrative. 
+       The time-travelling feature of the plot means that different incarnations of the Doctor occasionally meet. The current lead, Peter Capaldi, confirmed he would be leaving the show after the tenth series, 
+       with his final appearance being the 2017 Christmas special, "Twice Upon a Time". In July, Jodie Whittaker was announced as the Thirteenth Doctor, the first woman to be cast in the role. <a href="https://en.wikipedia.org/wiki/Doctor_Who" target="_blank" title="Doctor Who on Wikipedia" style="font-size:10px;font-style:italic">All info from Wikipedia</a></p>
+</div>
+<div class="w3-container">
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-grey w3-hover-blue w3-round" style="font-weight:bold;font-size:small">Click here to see all the Doctor Who Intros</button>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card w3-animate-zoom">
+            <header class="w3-container w3-black" style="background-color:black">
+                <span onclick="stop()" class="w3-button w3-display-topright" id="close">&times;</span>
+                <h2 style="text-align:center;text-decoration:underline;font-weight:bold;color:white">Doctor Who Intros</h2>
+            </header>
+            <div class="w3-container" style="background-color:black">
+                <iframe id="vid" class="yt_player_iframe" style="width:100%" height="480" src="https://www.youtube.com/embed/QNszKKAtEwU?enablejsapi=1&version=3&playerapiid=ytplayer&color=white" frameborder="0" allowfullscreen ="true" allowscriptaccess="always"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var modal = document.getElementById('id01');
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none"
+            var frame = document.getElementById("vid");
+            frame.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+        }
+    }
+    function stop() {
+        modal.style.display = 'none';
+        var frame = document.getElementById("vid");
+        frame.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', "*");
+    }
+</script>
+<br clear="all" />
+<br clear="all" />
+</body>
+</html>
